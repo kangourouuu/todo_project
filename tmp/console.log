@@ -1,0 +1,11 @@
+time="2025-07-03T00:40:00+07:00" level=fatal msg="dial tcp: lookup redis: no such host" meta="redis.go:64"
+time="2025-07-03T00:43:45+07:00" level=fatal msg="dial tcp: lookup redis: no such host" meta="redis.go:64"
+time="2025-07-03T00:45:57+07:00" level=fatal msg="dial tcp: lookup redis: no such host" meta="redis.go:64"
+time="2025-07-03T00:47:21+07:00" level=fatal msg="dial tcp: lookup redis: no such host" meta="redis.go:64"
+time="2025-07-03T00:49:09+07:00" level=fatal msg="dial tcp: lookup redis: no such host" meta="redis.go:64"
+time="2025-07-03T00:50:05+07:00" level=fatal msg="dial tcp: lookup redis: no such host" meta="redis.go:64"
+time="2025-07-03T00:51:13+07:00" level=info msg=PONG
+time="2025-07-03T00:51:13+07:00" level=info msg="DB name from config: todo"
+time="2025-07-03T00:51:13+07:00" level=info msg="Service todo_project-service listening on :9003"
+time="2025-07-03T00:51:40+07:00" level=info msg="Shutting down server ..."
+time="2025-07-03T00:51:40+07:00" level=info msg="Server exiting"

@@ -1,0 +1,55 @@
+services:
+  app:
+    build: .
+    ports:
+      - "9003:9003"
+    depends_on:
+      - redis
+      - postgres
+    environment:
+      - DB_HOST=postgres
+      - DB_PORT=5432
+      - DB_USER=postgres
+      - DB_PASSWORD=Quockhanh208@
+      - DB_NAME=todo
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
+    networks:
+      - app-network
+
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    networks:
+      - app-network
+
+  postgres:
+    image: postgres:15-alpine
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=Quockhanh208@
+      - POSTGRES_DB=todo
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d todo"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 30s
+    networks:
+      - app-network
+
+volumes:
+  redis_data:
+  postgres_data:
+
+networks:
+  app-network:
+    driver: bridge
+

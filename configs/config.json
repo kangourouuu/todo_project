@@ -1,0 +1,24 @@
+{
+	"main": {
+		"port": 9003,
+		"log_type": "FILE",
+		"log_file": "tmp/console.log",
+		"db": "enabled",
+		"redis": "enabled"
+	},
+	"redis": {
+		"address": "localhost:6379",
+		"database": 0,
+		"password": ""
+	},
+	"db": {
+		"host": "localhost",
+		"port": 5432,
+		"username": "postgres",
+		"password": "Quockhanh208@",
+		"database": "todo"
+	},
+	"auth_proxy": {
+		"auth_url": "http://localhost:8080"
+	}
+}
