@@ -111,10 +111,10 @@ todo-app/
 ```bash
 | Method | Endpoint            | Description          |
 | ------ | ------------------- | -------------------- |
-| GET    | `/api/v2/todos`     | Get all todos        |
-| GET    | `/api/v2/todos/:id` | Get todo by ID       |
-| POST   | `/api/v2/todos`     | Create a new todo    |
-| PUT    | `/api/v2/todos/:id` | Update existing todo |
-| DELETE | `/api/v2/todos/:id` | Delete a todo        |
+| GET    | `/api/v2/todo`     | Get all todos        |
+| GET    | `/api/v2/todo/:id` | Get todo by ID       |
+| POST   | `/api/v2/todo`     | Create a new todo    |
+| PUT    | `/api/v2/todo/:id` | Update existing todo |
+| DELETE | `/api/v2/todo/:id` | Delete a todo        |
 ```
 ---
